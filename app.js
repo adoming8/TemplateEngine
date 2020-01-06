@@ -8,6 +8,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 
+var profileTempData =[]
 
 promptUser();
 buildEmployeeTemplate();
@@ -46,7 +47,7 @@ function promptUser(){
                 temp_EmployeeObj.id, 
                 temp_EmployeeObj.email
             )
-            console.log(temp_EmployeeObj.name)
+            // console.log(temp_EmployeeObj.name)
 
         }
         else if (title === "Engineer"){
@@ -73,12 +74,13 @@ function promptManagerQs(name,id, email){
         message: "What is your office number?",
         name: "addiPro_2NewObj",
       }).then(answer => {
-       console.log(answer)
+    //    console.log(answer)
     var newManager = new Manager(name, id, email,answer.addiPro_2NewObj);
-        console.log(newManager)
-
+        // console.log(newManager)
+    profileTempData.push(newManager)
+    // console.log(profileTempData)
     buildEmployeeTemplate();
-      })
+    })
 }
 
 function promptEngineerQs(name,id, email){
@@ -112,7 +114,6 @@ function promptInternQs(name,id, email) {
 function buildEmployeeTemplate() {
 
 }
-
 
 function createHTML(){
 
