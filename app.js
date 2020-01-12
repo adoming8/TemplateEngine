@@ -79,7 +79,7 @@ function promptManagerQs(name,id, email){
         // console.log(newManager)
     profileTempData.push(newManager)
     // console.log(profileTempData)
-    buildEmployeeTemplate();
+    buildEmployeeCard();
     })
 }
 
@@ -111,11 +111,11 @@ function promptInternQs(name,id, email) {
       })
 }
 
-function buildEmployeeTemplate() {
+function buildEmployeeCard() {
 
 }
 
-function createHTML(){
+function createAppHTML(){
 
 }
 

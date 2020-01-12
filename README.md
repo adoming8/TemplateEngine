@@ -1,6 +1,5 @@
 # Team Profile Generator - Command line App 
-
-    This is a node.js command line application focused in helping manage a group of software developers from a management level. Initialyl, the app promps the user with a variety of questions that will shape/creat an html page with the employees' personal infomation.
+    This is a node.js command line application taylored to help manage software engineers. Initialyl, the app promps the user with a variety of questions that will shape/create an html page with the employees' personal infomation.
 + [Team Profile Generator](https://github.com/adoming8/Unit10_TemplateEngine.git "Team Profile Generator") 
 
 
